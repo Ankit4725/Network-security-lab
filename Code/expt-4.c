@@ -1,3 +1,5 @@
+/* Rail Fence Transposition Technique */
+
 #include<stdio.h>
 #include<string.h>
  
