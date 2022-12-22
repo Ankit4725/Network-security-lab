@@ -1,3 +1,5 @@
+/* Play Fair Technique */
+
 #include<stdio.h>
  
 int check(char table[5][5], char k) {
