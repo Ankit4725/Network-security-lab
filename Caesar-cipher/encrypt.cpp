@@ -20,7 +20,7 @@ int main()
     for(i = 0; i<n ; i++)  
     {  
         c = s[i];  
-        if(c >= 'a' && c <= 'z')  
+        if((c >= 'a' && c <= 'z')||(c=='*')||(c=='#')||(c=='@')||(c=='&')||(c=='$'))  
         {  
             c = c + key;  
             if(c > 'z')  
@@ -29,7 +29,7 @@ int main()
             }  
             s[i] = c;  
         }  
-        else if(c >= 'A' && c < 'Z')  
+        else if((c >= 'A' && c < 'Z')||(c=='*')||(c=='#')||(c=='@')||(c=='&')||(c=='$'))  
         {  
             c = c + key;  
             if(c > 'Z')  
@@ -37,7 +37,8 @@ int main()
                 c = c = 'Z' + 'A' - 1;  
             }  
             s[i] = c;  
-        }  
+        }
+
     }  
 
 // Output the cipher
